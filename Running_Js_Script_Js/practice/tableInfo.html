@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTable</title>
+
+
+    <style>
+        .form {
+            text-align: center;
+        }
+
+        .form1 {
+            margin-bottom: 10px;
+        }
+
+        #age {
+            text-align: right;
+        }
+
+        #birth {
+            text-align: center;
+        }
+
+        .butt {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #addButt {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Info Table!</h1>
+    <div class="form hidden">
+        <div class="form1">
+            <label>name: </label>
+            <input name="name" type="text">
+        </div>
+        <div class="form1">
+            <label>age: </label>
+            <input name="age" type="number">
+        </div>
+        <div class="form1">
+            <label>Birth Date:</label>
+            <input name="birthDate" type="date">
+        </div>
+        <div class="form1">
+            <button type="submit" id="subButt">submit</button>
+            <button type="submit" id="editButt" class='hidden'>submit</button>
+            <button id="closeButt">close</button>
+        </div>
+    </div>
+    <div class="form form1">
+        <button id="addButt">add</button>
+    </div>
+
+    <br>
+    <table class="myTable" border="2" width="100%">
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>BIRTH DATE</th>
+            <th>STATUS</th>
+        </thead>
+    </table>
+    <hr>
+    <script src="tableInfo.js"></script>
+</body>
+
+</html>
